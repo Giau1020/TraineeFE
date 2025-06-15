@@ -7,7 +7,7 @@ import { useAuth } from '@/composables/useAuth'
 
 /* ② state của form */
 const form = reactive({
-  email: '',
+  username: '',
   password: '',
   loading: false,
 })
