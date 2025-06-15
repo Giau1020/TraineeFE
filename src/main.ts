@@ -1,17 +1,16 @@
-import './assets/main.css'
+// import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import Antd from 'ant-design-vue'
 
 import App from './App.vue'
 import router from './router'
-
-import 'ant-design-vue/dist/antd.less';   // style gốc (Less)
-import '@/styles/global.less';   
+import 'ant-design-vue/dist/reset.css'
 const app = createApp(App)
-         // nơi override thêm (nếu cần)
 
 app.use(createPinia())
+app.use(Antd)
 app.use(router)
 
 app.mount('#app')

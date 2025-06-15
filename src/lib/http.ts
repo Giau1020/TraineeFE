@@ -1,14 +1,13 @@
-import axios from 'axios';
-import { useAuthStore } from '@/stores/auth';
+import axios from 'axios'
+import { useAuthStore } from '@/stores/auth'
 
 export const http = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE,
+  baseURL: 'http://localhost:3000/api/auth', // .env → VITE_API_BASE=http://localhost:3000/api
   headers: { 'Content-Type': 'application/json' },
-});
+})
 
-// Tự gắn Bearer token cho mọi request
 http.interceptors.request.use((config) => {
-  const auth = useAuthStore();          // lấy store singleton
-  if (auth.token) config.headers.Authorization = `Bearer ${auth.token}`;
-  return config;
-});
+  const auth = useAuthStore()
+  if (auth.token) config.headers.Authorization = `Bearer ${auth.token}`
+  return config
+})
