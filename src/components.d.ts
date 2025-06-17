@@ -27,6 +27,8 @@ declare module 'vue' {
     NavBar: typeof import('./components/organisms/NavBar.vue')['default']
     NavItem: typeof import('./components/atoms/NavItem.vue')['default']
     NavMenu: typeof import('./components/molecules/NavMenu.vue')['default']
+    RegisterForm: typeof import('./components/molecules/RegisterForm.vue')['default']
+    RegisterPage: typeof import('./components/pages/RegisterPage.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

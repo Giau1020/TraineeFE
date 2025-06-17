@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import LoginForm from '@/components/molecules/LoginForm.vue'
+import RegisterForm from '@/components/molecules/RegisterForm.vue'
 </script>
-
 <template>
   <div class="login-wrapper">
     <a-row justify="center" style="min-height: 100vh">
       <a-col :span="6">
         <a-card>
-          <a-typography-title level="3" style="margin-bottom: 24px">ĐĂNG NHẬP</a-typography-title>
-          <LoginForm />
+          <a-typography-title level="3" style="margin-bottom: 24px">ĐĂNG KÝ</a-typography-title>
+          <RegisterForm />
         </a-card>
       </a-col>
     </a-row>
@@ -44,8 +43,8 @@ import LoginForm from '@/components/molecules/LoginForm.vue'
   margin-left: auto;
 }
 .ant-card {
-  width: 500px;
-  height: 350px;
+  width: 700px;
+  height: fit-content;
   border-radius: 12px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
 }
@@ -165,7 +164,7 @@ import LoginForm from '@/components/molecules/LoginForm.vue'
 /* Card đăng nhập */
 .ant-card {
   border-radius: 16px;
-  margin-top: 200px;
+  margin-top: 80px;
   padding: 30px 24px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.9); /* nền trắng nhẹ có trong suốt */

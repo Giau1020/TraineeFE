@@ -11,6 +11,6 @@ defineEmits(['update:modelValue'])
 .input-big {
   font-size: 17px;
   padding: 10px 16px;
-  height: 52px;
+  height: 32px;
 }
 </style>

@@ -14,6 +14,14 @@ const router = createRouter({
     //   component: () => import('@/components/pages/HomePage.vue'),
     //   meta: { requiresAuth: true },
     // },
+    {
+      path: '/register',
+      name: 'Register',
+      /* ⚡ Mấu chốt: hàm import trả Promise → Vite tạo chunk riêng */
+      component: () => import('@/components/pages/RegisterPage.vue'),
+      // (tùy chọn) gán tên chunk để dễ debug:
+      // component: () => import(/* webpackChunkName: "register" */ '@/views/RegisterPage.vue'),
+    },
   ],
 })
 
