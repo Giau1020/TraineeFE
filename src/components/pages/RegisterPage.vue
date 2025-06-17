@@ -22,8 +22,6 @@ import RegisterForm from '@/components/molecules/RegisterForm.vue'
     <img class="decor-blue-circle" src="@/assets/blue-circle.svg" alt="floating decor" />
     <img class="decor-doctor" src="@/assets/login-doctor.svg" alt="floating decor" />
   </div>
-
-  <router-link to="/register">Chưa có tài khoản? Đăng ký</router-link>
 </template>
 
 <style scoped>

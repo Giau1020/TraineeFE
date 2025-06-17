@@ -150,10 +150,18 @@ async function onSubmit() {
     >
       Đăng ký
     </BaseButton>
+    <router-link class="full-row link-login" to="/login">Đã có tài khoản? Đăng nhập</router-link>
   </Form>
 </template>
 
 <style scoped>
+.register-form .link-login {
+  justify-self: center;
+  font-size: 14px;
+  margin-top: 4px;
+  color: #4096ff; /* tuỳ theme */
+  cursor: pointer;
+}
 .form {
   text-align: center;
 }
